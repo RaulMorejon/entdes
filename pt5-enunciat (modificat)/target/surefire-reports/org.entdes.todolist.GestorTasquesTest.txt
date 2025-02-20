@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.entdes.todolist.GestorTasquesTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.334 s <<< FAILURE! -- in org.entdes.todolist.GestorTasquesTest
+org.entdes.todolist.GestorTasquesTest.testModificarTascaDataIniciIncorrecta -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: La fecha de inicio no puede ser anterior a la actual. ==> Expected java.lang.Exception to be thrown, but nothing was thrown.
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:71)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:41)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3023)
+	at org.entdes.todolist.GestorTasquesTest.testModificarTascaDataIniciIncorrecta(GestorTasquesTest.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
