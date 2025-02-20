@@ -17,7 +17,7 @@ public class Tasca {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataFiReal;
-
+ 
     private Integer prioritat;
 
     private static int idCounter = 0;

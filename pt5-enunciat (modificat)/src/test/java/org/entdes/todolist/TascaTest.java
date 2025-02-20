@@ -10,8 +10,6 @@ import org.entdes.todolist.*;
 import org.junit.jupiter.api.*;
 
 public class TascaTest {
-
- //Mirar ID que incrementa
  
     @Test
     void TestGetId (){
@@ -20,7 +18,6 @@ public class TascaTest {
         Tasca tasca2 = new Tasca(null);
         assertEquals(2, tasca2.getId());
     }
-    
     @Test
     void testToStringCompletada (){
         Tasca tasca = new Tasca("nova tasca");

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import org.entdes.mail.IEmailService;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+
 
 import org.mockito.*;
 
@@ -15,10 +15,11 @@ class GestorTasquesTest {
 
     private GestorTasques gestor;
 
+
     @BeforeEach
     void setUp() {
-        MockitoAnnotations.openMocks(this);
-        gestor = new GestorTasques(emailServiceMock, "test@example.com");
+        MockitoAnnotations.openMocks(this); //inicialitza els mocks de Mockito 
+        gestor = new GestorTasques(emailServiceMock, "test@example.com");//gestor amb un mock de emailServiceMock i un correu de prova
     }
 
 
@@ -267,7 +268,5 @@ class GestorTasquesTest {
 
         assertEquals(2, gestor.llistarTasquesPerComplecio(true).size(), "Han d'aparèixer 2 tasques completades.");
     }
-
-
 
 }
